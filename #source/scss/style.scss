@@ -1,0 +1,78 @@
+@import "main.scss";
+@import "nullstyle.scss";
+@import"header.scss";
+@import"footer.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+body{
+	font-family: Rubik;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	background: #3D85F9;
+	overflow-x: hidden;
+}
+
+body.lock{
+	overflow: hidden;
+}
+._container{
+	width: 100%;
+	max-width:1140px;
+	margin: 0 auto;
+}
+h1{
+	font-weight: 500;
+	font-size: 36px;
+	color: #07275C;
+}
+._btn{
+	position: relative;
+	width: 180px;
+	height: 50px;
+	background: linear-gradient(262.95deg, #FFE600 0%, #FA940B 99.33%);
+	border-radius: 30px;
+	cursor: pointer;
+
+}
+._btn:hover{
+	box-shadow:  0 4px 1px  rgba(0,0,0,0.2);
+	transition: all 0.3s ease;
+}
+._btn:after{
+	content: '';
+	display: block;
+	position: absolute;
+	background: #3D85F9;
+	width: 172px;
+	height: 43px;
+	border-radius: 34px;
+	top: 3px;
+	left: 4px;
+	opacity: 1;
+	transition: all 0.3s linear;
+}
+._btn:hover:after{
+	opacity: 0;
+	transition: all 0.3s linear;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border: 1px solid #7DBEFA;
+  -webkit-text-fill-color:  #07275C99;
+  -webkit-box-shadow: 0 0 0px 1000px #7DBEFA inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*
+$md1:max-width: 767px;
+$md1:max-width: 767px;
+$md1:max-width: 767px;
+*/
+
+/*
+@media ($md1 + px){
+	
+}
+*/
+ 
